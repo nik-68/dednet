@@ -18,6 +18,7 @@ import time
 import os
 import urllib.request
 import re
+import threading
 from os import system, name, mkdir,rmdir
 "import httpx"
 "import undetected_chromedriver as webdriver"
@@ -67,6 +68,6 @@ def dos():
 thread_count=thread_count+1
 for i in range(thread_count):
 	try:
-		threads.Thread(target=dos).start()	
+		threading.Thread(target=dos).start()	
 	except KeyboardInterrupt:
 		exit()
