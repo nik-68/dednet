@@ -67,6 +67,6 @@ def dos():
 thread_count=thread_count+1
 for i in range(thread_count):
 	try:
-		threading.Thread(target=dos).start()	
+		threads.Thread(target=dos).start()	
 	except KeyboardInterrupt:
 		exit()
